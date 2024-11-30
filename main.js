@@ -79,15 +79,60 @@
 // }
 
 // condicionales encadenados
-let year = prompt("ingrese el año actual:");
+// let year = prompt("ingrese el año actual:");
 
-if ( year == 2024 ) {
-    alert("Muy bien");
-    alert("eres genial");
-} else if ( year > 2024 ) {
-    alert("Muy alto");
-} else if ( year < 2024 ) {
-    alert("Muy bajo")
+// if ( year == 2024 ) {
+//     alert("Muy bien");
+//     alert("eres genial");
+// } else if ( year > 2024 ) {
+//     alert("Muy alto");
+// } else if ( year < 2024 ) {
+//     alert("Muy bajo")
+// } else {
+//     alert("No es correcto");
+// }
+
+// operadores logicos
+// or ||
+// alert( true || true ); // true 
+// alert( true || false); // true
+// alert( false || true ); // true
+// alert( false || false ); // false
+
+
+// let hour = 12;
+// let isWeekend = false;
+
+// if ( hour < 9 || hour > 18 || isWeekend){
+//     alert("La oficina esta cerrada");
+// } else {
+//     alert("Open!");
+// }
+
+// and &&
+// alert( true && true ); // true
+// alert( true && false ); // false
+// alert( false && true ); // false
+// alert( false && false ); // false
+
+// solution n
+let userName = prompt('Quién eres tú?', '');
+
+if (userName == "Admin" ) {
+    
+    let passWord = prompt('clave?', '');
+
+    if ( passWord == "TheMaster" ) {
+        alert("Welcome");
+    } else if ( passWord == '' || passWord == null) {
+        alert( "Cancelado" )
+    } else {
+        alert( "Clave incorrepta" );
+    }
+} else if ( userName == "" || userName == null) {
+    alert( "Cancelado" );
 } else {
-    alert("No es correcto");
+    alert("no se quien eres :b");
 }
+
+
